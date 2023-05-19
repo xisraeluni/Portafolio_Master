@@ -197,10 +197,8 @@ span {
 
 .services-container .services-box:hover {
     border-color: var(--main-color);
-    transform: scale(1.02);
-    
+    transform: scale(1.02);    
 }
-
 
 .services-box i {
     font-size: 7rem;
