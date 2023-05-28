@@ -82,14 +82,16 @@ section {
     animation: floatImage 4s ease-in-out infinite;
 }
 
-@keyframes floatImage{
-    0%{
+@keyframes floatImage {
+    0% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(-2rem);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 
@@ -182,16 +184,16 @@ span {
     font-size: 2.6rem;
 }
 
-.about-content p{
+.about-content p {
     font-size: 1.6rem;
-    margin: 2rem 0 3rem;    
+    margin: 2rem 0 3rem;
 }
 
 .services h2 {
     margin-bottom: 5rem;
 }
 
-.services-container{
+.services-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,19 +213,97 @@ span {
 
 .services-container .services-box:hover {
     border-color: var(--main-color);
-    transform: scale(1.02);    
+    transform: scale(1.02);
 }
 
 .services-box i {
     font-size: 7rem;
-    color: var(--main-color);    
+    color: var(--main-color);
 }
 
-.services-box h3{
+.services-box h3 {
     font-size: 2.6rem;
 }
 
 .services-box p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
+}
+
+.portafolio {
+    background: var(--second-bg-color);
+}
+
+.portafolio h2 {
+    margin-bottom: 4rem;
+}
+
+.protafolio-contanier {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.protafolio-contanier .portafolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.portafolio-box img{
+    width: 100%;
+    transition: .5s ease;
+}
+
+.portafolio-box:hover img {
+    transform: scale(1.1);
+}
+
+
+.protafolio-box .portafolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.protafolio-box:hover .portafolio-layer {
+    transform: translateY(0);
+}
+
+.portafolio-layer h4 {
+    font-size: 3rem;
+}
+
+.portafolio-layer p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.portafolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.portafolio-layer a i {
+    font-size: 2rem;
+    color: var(--second-bg-color);
 }
