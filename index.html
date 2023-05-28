@@ -13,8 +13,9 @@
 
     <!--Custom css-->
     <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="stylesheet" href="./script.js">
 
+</head>
 
 
 <body>
@@ -39,9 +40,23 @@
         <div class="home-content">
             <h3>Hello, it's Me</h3>
             <h1>Andrew Steven's</h1>
-            <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quisquam. Consequatur ea sed ad
-                doloremque iusto aliquid!</p>
+            <h3>I'am a : <span  id="element"></span></h3>
+
+                <!-- Load library from the CDN -->
+                <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+            
+                <!-- Setup and start animation! -->
+                <script>
+                    var typed = new Typed('#element', {
+                        strings: ['Delevoper ', 'Blogger ', ' & ; YouTuber and  Freelancer.'],            
+                        typeSpeed: 100,
+                        backSpeed: 100,
+                        backDelay: 1000,
+                        loop: true
+                    });
+                </script>
+                
+            <p>Hello, I am currently a Computer Systems Engineering student and this is my personal portfolio with some projects that I have carried out in practice at the university itself and in courses on my own, greetings and I hope to be of service to you, thanks.</p>
             <div class="social-media">
                 <a href="#"><i class='bx bxl-facebook'></i></a>
                 <a href="#"><i class='bx bxl-twitter'></i></a>
@@ -166,10 +181,16 @@
     </section>
 
     <!-- typed js -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> -->
 
-    <!--custom js-->
-    <script src="js/script.js"></script>
+
+    <!-- Element to contain animated typing -->
+    
+</body>
+
+
+<!--custom js-->
+<script src="js/script.js"></script>
 
 </body>
 
